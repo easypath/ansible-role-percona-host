@@ -2,7 +2,7 @@ Percona Host
 ============
 - Installs Percona XtraDB Cluster (or Server) 5.7 on CentOS 7.4
 - Firewalld rules configured based on selected install (cluster or server)
-- Generates TLS certificates and secures Docker engine (requires Galaxy role [easypath.generate-tls-certs](https://galaxy.ansible.com/easypath/generate-tls-certs/))
+- Generates TLS certificates (requires Galaxy role [easypath.generate-tls-certs](https://galaxy.ansible.com/easypath/generate-tls-certs/))
 
 **WARNING: re-running certificate generation in the same output folder will overwrite any existing certs and keys!**
 
