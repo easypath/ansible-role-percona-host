@@ -7,9 +7,6 @@ fw_zone_name: public
 config_tls: true
 # Do not put trailing slash "/"
 cert_dest_path: /var/lib/mysql-certs
-# 2 years
-cert_valid_days: 730
-cert_key_size: 4096
 percona_bind_ip: 0.0.0.0
 # Defined by Galaxy role:easypath.docker-host
 #cert_dir:

@@ -3,6 +3,9 @@
   - name: Generate certs (on control machine); requires Galaxy role "easypath.generate-tls-certs"
     import_role: 
       name: easypath.generate-tls-certs
+    vars:
+      # @AB TODO: Percona not compatible with SAN-certs
+      - tls_server_enable_san: false
 
   - name: Create certificate folder
     file:
