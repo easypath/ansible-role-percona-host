@@ -40,7 +40,7 @@
     become: yes
     when:
       - config_cluster|bool
-      - cert_src_path is defined
+      - cert_dir is defined
       - tls_ca_cert is defined
       - tls_ca_key is defined
       - wsrep_cluster_address is defined
